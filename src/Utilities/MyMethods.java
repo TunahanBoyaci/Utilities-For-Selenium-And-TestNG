@@ -16,15 +16,6 @@ public class MyMethods {
         }
     }
 
-    @FindBy (css = "input[placeholder='Search']")
-    public WebElement searchInbox;
-
-    @FindBy (css = "button[class='btn btn-default btn-lg']")
-    public WebElement searchButton;
-
-
-
-
     public static void successMessageValidation(){
         WebElement successMessage = BaseDriver.driver.findElement(By.cssSelector("div[class='alert alert-success alert-dismissible']"));
         Assert.assertTrue(successMessage.isDisplayed());
