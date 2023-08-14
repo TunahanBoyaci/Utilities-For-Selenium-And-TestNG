@@ -34,12 +34,7 @@ public class BaseDriver {
 
     @AfterClass (alwaysRun = true)
     public void quitDriver(){
-        try {
-            Thread.sleep(3000);
-        } catch (InterruptedException e) {
-            throw new RuntimeException(e);
-        }
-
+        MyMethods.myWait(4);
         driver.quit();
     }
 
