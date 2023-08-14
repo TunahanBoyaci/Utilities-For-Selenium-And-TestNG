@@ -68,30 +68,30 @@ public class ParameterDriver {
         FileUtils.copyFile(srcFile, new File("screenShots/screenShot" + localDateTime.format(dateTimeFormatter) + ".png"));
     }
 
-    public void login() {
-        driver.get("https://opencart.abstracta.us/index.php?route=account/login");
+//    public void login() {
+//        driver.get("https://opencart.abstracta.us/index.php?route=account/login");
+//
+//        WebElement emailInbox = driver.findElement(By.cssSelector("input[id='input-email']"));
+//        emailInbox.sendKeys("ahmetyilmaz2@gmail.com");
+//
+//        WebElement passInbox = driver.findElement(By.cssSelector("input[id='input-password']"));
+//        passInbox.sendKeys("123456Tuna.");
+//
+//        WebElement logButton = driver.findElement(By.cssSelector("input[value='Login']"));
+//        logButton.click();
+//    }
 
-        WebElement emailInbox = driver.findElement(By.cssSelector("input[id='input-email']"));
-        emailInbox.sendKeys("ahmetyilmaz2@gmail.com");
 
-        WebElement passInbox = driver.findElement(By.cssSelector("input[id='input-password']"));
-        passInbox.sendKeys("123456Tuna.");
-
-        WebElement logButton = driver.findElement(By.cssSelector("input[value='Login']"));
-        logButton.click();
-    }
-
-
-    public void login(String username, String password) {
-        driver.get("https://opencart.abstracta.us/index.php?route=account/login");
-
-        WebElement emailInbox = driver.findElement(By.cssSelector("input[id='input-email']"));
-        emailInbox.sendKeys(username);
-
-        WebElement passInbox = driver.findElement(By.cssSelector("input[id='input-password']"));
-        passInbox.sendKeys(password);
-
-        WebElement logButton = driver.findElement(By.cssSelector("input[value='Login']"));
-        logButton.click();
-    }
+//    public void login(String username, String password) {
+//        driver.get("https://opencart.abstracta.us/index.php?route=account/login");
+//
+//        WebElement emailInbox = driver.findElement(By.cssSelector("input[id='input-email']"));
+//        emailInbox.sendKeys(username);
+//
+//        WebElement passInbox = driver.findElement(By.cssSelector("input[id='input-password']"));
+//        passInbox.sendKeys(password);
+//
+//        WebElement logButton = driver.findElement(By.cssSelector("input[value='Login']"));
+//        logButton.click();
+//    }
 }

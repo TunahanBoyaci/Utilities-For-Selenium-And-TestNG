@@ -16,11 +16,11 @@ public class MyMethods {
         }
     }
 
-    public static void successMessageValidation(){
-        WebElement successMessage = BaseDriver.driver.findElement(By.cssSelector("div[class='alert alert-success alert-dismissible']"));
-        Assert.assertTrue(successMessage.isDisplayed());
-        Assert.assertTrue(successMessage.getText().contains("successfully updated"));
-    }
+//    public static void successMessageValidation(){
+//        WebElement successMessage = BaseDriver.driver.findElement(By.cssSelector("div[class='alert alert-success alert-dismissible']"));
+//        Assert.assertTrue(successMessage.isDisplayed());
+//        Assert.assertTrue(successMessage.getText().contains("successfully updated"));
+//    }
 
     public static String generateRandomFirstName() {
         String[] firstNames = {
